@@ -94,51 +94,51 @@
 用于简单测试钉钉普通消息发送API相关接口。
 
 # 截图
-  * Markdown 消息
-    <img src="snapshots/markdown.png" style="zoom:30%" />  
+  * Markdown 消息  
+    <img src="snapshots/markdown.png" style="height:300px;" />  
 
-  * OA消息
-    <img src="snapshots/oa.png" style="zoom:30%" />  
+  * OA消息    
+    <img src="snapshots/oa.png" style="height:300px;" />  
 
-  * 卡片消息(整体跳转)
-    <img src="snapshots/actioncard.png" style="zoom:30%" />  
+  * 卡片消息(整体跳转)    
+    <img src="snapshots/actioncard.png" style="height:300px;" />  
 
-  * 卡片消息(独立跳转)
-    <img src="snapshots/actioncard2.png" style="zoom:30%" />  
+  * 卡片消息(独立跳转)    
+    <img src="snapshots/actioncard2.png" style="height:300px;" />  
 
-  * 图片消息
-    <img src="snapshots/image.png" style="zoom:30%" />  
+  * 图片消息    
+    <img src="snapshots/image.png" style="height:300px;" />  
 
-  * 文本消息
-    <img src="snapshots/text.png" style="zoom:30%" />  
+  * 文本消息    
+    <img src="snapshots/text.png" style="height:300px;" />  
 
 
 
 # <a id="preview">消息形式预览</a>
 
-  * Markdown 消息
+  * Markdown 消息   
     输入:  
-    <img src="snapshots/markdown.png" style="zoom:30%" />    
+    <img src="snapshots/markdown.png" style="height:300px;" />    
     消息显示:  
-    <img src="snapshots/preview/markdown_preview.png" style="zoom:30%" />      
+    <img src="snapshots/preview/markdown_preview.png" style="height:300px;" />      
 
-  * OA消息
+  * OA消息    
     输入:  
-    <img src="snapshots/preview/oa_input.png" style="zoom:30%" />  
+    <img src="snapshots/preview/oa_input.png" style="height:300px;" />  
     消息显示:  
-    <img src="snapshots/preview/oa_preview.png" style="zoom:30%" />   
+    <img src="snapshots/preview/oa_preview.png" style="height:300px;" />   
 
-  * 卡片消息(整体跳转)
+  * 卡片消息(整体跳转)    
     输入:  
-    <img src="snapshots/preview/actioncard_input.png" style="zoom:30%" />  
+    <img src="snapshots/preview/actioncard_input.png" style="height:300px;" />  
     消息显示:  
-    <img src="snapshots/preview/actioncard_preview.png" style="zoom:30%" />   
+    <img src="snapshots/preview/actioncard_preview.png" style="height:300px;" />   
 
-  * 卡片消息(独立跳转)
+  * 卡片消息(独立跳转)    
     输入:  
-    <img src="snapshots/preview/actioncard2_input.png" style="zoom:30%" />  
+    <img src="snapshots/preview/actioncard2_input.png" style="height:300px;" />  
     消息显示:  
-    <img src="snapshots/preview/actioncard2_preview.png" style="zoom:30%" />  
+    <img src="snapshots/preview/actioncard2_preview.png" style="height:300px;" />  
 
 
 
@@ -147,16 +147,17 @@
   通过2个简单步骤即可快速使用「消息Plus」小程序:
 
   1. 加入「消息+」钉钉组织
-     使用钉钉扫描二维码加入。
+     使用钉钉扫描二维码加入。  
      
-     <img src="images/howtouse/messageplus_join_qrcode.jpg" style="zoom:50%" />  
+     <img src="images/howtouse/messageplus_join_qrcode.jpg" style="height:300px;" />  
 
   2. 选择「工作台」-「全员」-「消息Plus」
      
-     <img src="images/howtouse/messageplus_workbench.jpg" style="zoom:50%" />  
+     <img src="images/howtouse/messageplus_workbench.jpg" style="height:300px;" />  
      
-     消息Plus首页：
-     <img src="images/howtouse/messageplus_homepage.jpg" style="zoom:50%" />  
+     消息Plus首页：  
+
+     <img src="images/howtouse/messageplus_homepage.jpg" style="height:300px;" />  
 
   这样即可使用「消息Plus」小程序发送多媒体消息了。
 
