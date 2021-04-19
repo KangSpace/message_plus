@@ -98,11 +98,13 @@
       </view>
     </view>
     <!--帮助-->
-    <!-- <view class="help-view">
-      <button size="default" onTap="goto" data-href="/pages/biz/help/help">
-        <view class="section-button">帮助</view>
+    <view class="help-view">
+    <!-- /pages/biz/help/help -->
+      <button size="default" onTap="goto" data-href="https://github.com/KangSpace/message_plus">
+        <view class="section-button">关于
+        <view class="desc-text inline_block">(github)</view></view>
       </button>
-    </view> -->
+    </view>
     <view class="save-btn-view">
       <button onTap="onSettingSaveHandle" loading="{{settings.status.loading}}" name="saveSettingBtn" disabled="{{!settings.status.changed}}" size="default" type="primary">保存</button>
     </view>

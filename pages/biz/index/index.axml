@@ -18,6 +18,7 @@
       <!-- <button size="mini" class="trans-btn" type="primary" onTap="goto" data-href="/pages/test/index">TestPage</button> -->
       <!-- <button size="mini" class="trans-btn" type="primary" onTap="scrollInto">Tab滚动</button> -->
           <!-- <button size="mini" class="trans-btn" type="primary" onTap="changeSort">调序</button> -->
+          <!-- <button size="mini" class="trans-btn" type="primary" onTap="goto" data-href="https://github.com/KangSpace/message_plus#%E6%B6%88%E6%81%AF%E5%BD%A2%E5%BC%8F%E9%A2%84%E8%A7%88">消息示例</button> -->
           <button name="setting-btn" onTap="goto" data-href="/pages/biz/settings/settings" size="mini" type="primary" class="trans-btn">
             <image mode="scaleToFill" class="icon" src="/images/icon_setting.png"/>
             设置

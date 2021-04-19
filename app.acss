@@ -269,3 +269,10 @@ image{
   vertical-align: middle;
   margin-left: 0.05rem;
 }
+
+.desc-text{
+  /* font-size: 16rpx; */
+  font-size: 20rpx;
+  color: #bdbebf;
+  padding:8rpx 0;
+}
