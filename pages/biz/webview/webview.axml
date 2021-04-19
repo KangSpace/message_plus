@@ -1,0 +1,15 @@
+<import src="/pages/biz/error-view/index.axml"/>
+<!-- loading.... page -->
+
+<!-- 页面刷新 -->
+<block a:if="{{url=='refresh'}}">
+<!-- 此处不需要重新添加加载ui,加载ui在上方loading page -->
+</block>
+
+<!-- 错误页面 -->
+<block a:elif="{{url == 'error'}}">
+  <template is="ErrorView" data="{{...errorData}}"/>
+</block>
+
+<!-- webview loading-->
+<web-view a:else id="{{webviewId}}" src="{{url}}" onMessage="onMessageInMsgPlusWebView"/>

@@ -1,0 +1,45 @@
+<import src="/pages/biz/copyright/copyright.axml"/>
+
+<view class="page">
+  <view class="container">
+    <view class="page-description">
+      Markdown 语法
+    </view>
+    <view class="page-section">
+      <text class="markdown-help-text">
+    标题
+    # 一级标题
+    ## 二级标题
+    ### 三级标题
+    #### 四级标题
+    ##### 五级标题
+    ###### 六级标题
+    
+    引用
+    > A man who stands for nothing will fall for anything.
+    
+    文字加粗、斜体
+    **bold**
+    *italic*
+    
+    链接
+    [this is a link](http://name.com)
+    
+    图片
+    ![](http://name.com/pic.jpg)
+    
+    无序列表
+    - item1
+    - item2
+    
+    有序列表
+    1. item1
+    2. item2
+
+    换行
+    \<text>n</text>  (建议\<text>n</text>前后分别加2个空格)
+  </text>
+    </view>
+  </view>
+  <template key="copyright" is="copyright"/>
+</view>

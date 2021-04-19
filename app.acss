@@ -1,0 +1,271 @@
+/* 标签CSS */
+page {
+  background-color: #F7F7F7;
+  border: 1px solid rgba(0,0,0,0);
+  box-sizing: border-box;
+  /* font-size: 16px; */
+}
+
+textarea,input{
+  font-size: 30rpx;
+  width: 95%;
+  margin: 0;
+  padding-right: 0;
+  vertical-align: middle;
+  text-align: left;
+}
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input::-ms-input-placeholder,
+input::placeholder,
+textarea::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+textarea::-ms-input-placeholder,
+textarea::placeholder{
+  /* font-size: 24rpx; */
+}
+
+button {
+  /* font-size: 24rpx; */
+  margin-top:20rpx;
+  margin-bottom:20rpx;
+}
+
+image{
+  /* height: auto; */
+  width: 100%;
+}
+/* class css */
+
+/* page css */
+
+.page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  /* font-size: 24rpx; */
+  flex: 1;
+}
+
+.page-head {
+  padding: 32rpx;
+  background: #fff;
+}
+
+.page-container{
+  /* padding: 32rpx; */
+}
+
+.page-description {
+  margin: 32rpx;
+  margin-bottom: 32rpx;
+  font-size: 32rpx;
+}
+
+.page-section {
+  background: #fff;
+  padding:0 32rpx;
+  /* margin-bottom: 32rpx; */
+}
+
+.page-section-title {
+  padding: 16rpx 32rpx;
+}
+
+.page-section-space {
+  padding-bottom: 32rpx;
+}
+
+.page-section-inner-space {
+  padding-bottom: 20rpx;
+}
+
+.page-section-btns {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page-section-btns > view {
+  flex: 1;
+  height: 84rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #49a9ee;
+}
+.page-section-btns > view + view {
+  border-left: 1px solid #ddd;
+}
+
+/* background css */
+
+.bc_white {
+  background-color: #fff;
+}
+
+.bc_blue {
+  background-color: #49A9EE;
+}
+
+.bc_red {
+  background-color: #F04134;
+}
+
+.bc_yellow {
+  background-color: #FFBF00;
+}
+
+.bc_green {
+  background-color: #00A854;
+}
+
+/* form css */
+.form-row {
+  display: flex;
+  align-items: center;
+  /* padding: 0 30rpx; */
+  height: 88rpx;
+  align-items: center;
+}
+
+.form-row-label {
+  width: 180rpx;
+  /* font-size: 34rpx; */
+  margin-right: 10rpx;
+  text-align: left;
+  color: #000;
+}
+
+.form-row-content {
+  flex: 1;
+  /* font-size: 34rpx; */
+}
+
+.form-line {
+  height: 1px;
+  background-color: #ddd;
+  margin-left: 30rpx;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+
+/* copyright css */
+
+.copyright-view{
+  display: block;
+  position: relative;
+  bottom: 0;
+  padding: 0.6rem;
+}
+
+.copyright-view .copyright-text{
+  font-size: 0.17rem;
+  color: #888;
+  text-align: center;
+}
+
+/* button */
+/*块状按钮*/
+.section-button{
+  float: left;
+  padding-left: 32rpx;
+}
+
+/* href button css */
+.href-button{
+  color: #49A9EE;
+  display: inline-block;
+}
+
+/* 透明按钮 */
+.trans-btn,
+.trans-btn:active,
+.trans-btn:hover
+{
+    margin: 0;
+    border: 0;
+    background: none;
+    color: #888;
+}
+.trans-btn:hover{
+    /* background-color: #fff;
+    color: #888; */
+}
+
+
+/* 底部按钮 */
+.bottom-btn-view{
+  width: 100%;
+  position: fixed;
+  bottom: 0;    
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  z-index: 999;
+  left: 0;
+}
+.bottom-btn-view-in{
+  padding: 0.001rem 0.32rem;
+}
+
+.radio {
+  display: block;
+  margin: 20rpx 0;
+}
+.radio-right{
+  position: relative;
+  float: right;
+  right: 0;
+}
+.radio-small{
+  transform: scale(0.8);
+}
+.radio-text {
+  line-height: 1.8;
+  vertical-align: text-bottom;
+}
+.radio-sub-desc{
+  display: block;
+  font-size: 0.15rem;
+  color: #888;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin:0 3px;
+}
+
+/*single css*/
+.inline_block{
+  display: inline-block;
+}
+.p-t-32{
+  padding-top: 32rpx;
+}
+.p-b-32{
+  padding-top: 32rpx;
+}
+.p-r-0{
+  padding-right: 0;
+}
+.p-0{
+  padding: 0;
+}
+
+/* font */
+
+/* other */
+.required{
+  color: red;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.05rem;
+}

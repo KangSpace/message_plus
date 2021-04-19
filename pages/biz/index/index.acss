@@ -1,0 +1,53 @@
+
+.slogon {
+  text-align: center;
+}
+.head-view{
+  height: 320rpx;
+  margin-bottom: 32rpx;
+  position: relative;
+  /* background: #3286fa; */
+}
+.head-view .head-title{
+  color: #fff;
+
+}
+.head-view.image-box{
+  overflow: hidden;
+  background: url('/images/index_top1.jpg') no-repeat;
+}
+.logo {
+  margin-top: 40rpx;
+  width: 90px;
+  height: 90px;
+}
+
+.info {
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}
+
+.desc {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.container {
+  border-radius: 2pt;
+}
+
+/* custom css */
+
+.extra-info {
+  /* border-top: 1px solid #ddd; */
+  margin-left: 30rpx;
+  padding: 20rpx 0;
+  color: #888;
+}
+
+.setting-btns-view{
+  float: right;
+  display: inline-block;
+  position: relative;
+  top: -10rpx;
+}

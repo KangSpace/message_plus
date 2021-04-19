@@ -1,0 +1,39 @@
+<import  src="/pages/biz/copyright/copyright.axml"/>
+
+<view class="page">
+  <view class="container" key="container">
+  <!-- image-box -->
+    <view class="head-view slogon bc_white ">
+      <view class=""> 
+        <image src="/images/messageplus_logo.png" mode="scaleToFill" class="logo"></image>
+        <view>
+          <text class="head-title">{{pageDesc}}</text>
+        </view>
+      </view> 
+      
+    </view>
+    <view class="page-description">
+      <view class="inline_block">消息Plus</view>
+      <view class="setting-btns-view">
+      <!-- <button size="mini" class="trans-btn" type="primary" onTap="goto" data-href="/pages/test/index">TestPage</button> -->
+      <!-- <button size="mini" class="trans-btn" type="primary" onTap="scrollInto">Tab滚动</button> -->
+          <!-- <button size="mini" class="trans-btn" type="primary" onTap="changeSort">调序</button> -->
+          <button name="setting-btn" onTap="goto" data-href="/pages/biz/settings/settings" size="mini" type="primary" class="trans-btn">
+            <image mode="scaleToFill" class="icon" src="/images/icon_setting.png"/>
+            设置
+          </button>
+      </view>
+    </view>
+    <view class="page-section p-0">
+      <!-- 消息处理的组件-->
+      <message-web-swaper tabs="{{messageTabs}}" scrollInfoView = "{{scrollInfoView}}" />
+    </view>
+     
+    <!-- <view class="bottom-btn-view">
+      <view class="bottom-btn-view-in">
+        <button size="default" type="primary" onTap="onSubmitMessage">发送</button>
+      </view>
+    </view> -->
+  </view>
+</view>
+<template key="copyright" is="copyright"/>

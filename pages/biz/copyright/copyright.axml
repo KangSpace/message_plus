@@ -1,0 +1,5 @@
+<template name="copyright">
+  <view class="copyright-view">
+    <view class="copyright-text">Powered by KangSpace</view>
+  </view>
+</template>

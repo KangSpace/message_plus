@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "message-web-swaper": "/pages/components/messsage-tab-swaper/message-tab-swaper"
+  }
+}

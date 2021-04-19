@@ -1,0 +1,21 @@
+{
+
+  "pages": [
+    "pages/biz/index/index",
+    "pages/biz/settings/settings",
+    "pages/test/index",
+    "pages/biz/copyright/copyright",
+    "pages/biz/help/help",
+    "pages/biz/help/markdown/markdown",
+    "pages/biz/webview/webview",
+    "pages/biz/error-view/index"
+    
+  ],
+  "window": {
+    "defaultTitle": "消息Plus",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": true,
+    "allowsBounceVertical": "YES"
+  },
+  "debug": true
+}

@@ -1,0 +1,55 @@
+.row-auto-height{
+  height: auto;
+}
+.radio {
+  display: block;
+  margin: 20rpx 0;
+}
+.radio-right{
+  position: relative;
+  float: right;
+  right: 0;
+}
+.radio-small{
+  transform: scale(0.8);
+}
+.radio-text {
+  line-height: 1.8;
+  vertical-align: text-bottom;
+}
+.radio-sub-desc{
+  display: block;
+  font-size: 0.15rem;
+  color: #888;
+}
+
+.save-btn{
+    margin: 0;
+    float: right;
+    position: relative;
+    top: -12rpx;
+}
+.save-btn-view{
+  margin: 30rpx 80rpx;
+}
+.goto-test-page{
+  height: 30px;
+  width: 30px;
+}
+.user-info{
+  float: right;
+  position: relative;
+  top: -0.25rem;
+}
+.user-info .user-avatar{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.user-info .user-name{
+  vertical-align: middle;
+  margin-right: 20rpx;
+  float: left;
+  position: relative;
+  top: 0.18rem;
+}

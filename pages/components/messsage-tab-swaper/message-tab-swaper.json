@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "msg-textarea": "/pages/components/msg-textarea/msg-textarea"
+  }
+}

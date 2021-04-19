@@ -1,0 +1,77 @@
+
+.slogon {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 60rpx;
+  width: 90px;
+  height: 90px;
+}
+
+.info {
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}
+
+.desc {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.container {
+  padding-top: 48rpx;
+}
+
+/* custom css */
+.handleContainer{
+  padding: 25rpx;
+}
+
+.handleContainer button {
+  margin: 10rpx;
+}
+
+.extra-info {
+  /* border-top: 1px solid #ddd; */
+  margin-left: 30rpx;
+  padding: 20rpx 0;
+  color: #888;
+}
+/*page/component/radio/radio.acss */
+.radio {
+  display: block;
+  margin-bottom: 20rpx;
+}
+.radio-text {
+  line-height: 1.8;
+}
+.radio-sub-desc{
+  display: block;
+  font-size: 0.15rem;
+}
+label{
+  font-size: 0.25rem;
+}
+input{
+  font-size: 0.25rem;
+}
+.form-row-label{
+  font-size: 0.25rem;
+}
+
+.request-type-row{
+  height: 400rpx;
+}
+
+.msg-type-list-view{
+  padding: 30rpx;
+}
+.msg-type-list-view .radio{
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+.msg-type-list-view .radio-text {
+  vertical-align: text-bottom;
+}

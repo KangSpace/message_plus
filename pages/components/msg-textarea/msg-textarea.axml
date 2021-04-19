@@ -1,0 +1,30 @@
+<view>
+  <textarea key="textarea_{{textareaId}}"
+            a:if="{{textarea.isShow}}"
+            class="{{textareaClass}}"  
+            id="{{textareaId}}" 
+            name=""  
+            maxlength = "{{maxLength}}"
+            placeholder="{{placeholder}}"
+            placeholder-class="{{placeholderClass}}"
+            focus = "{{true}}"
+            data-modifyData = "{{modifyData}}"
+            onInput="onTextareaInput"
+            onBlur="onTextareaBlur"
+            value="{{textarea.data}}"
+            />
+            <!-- value="{{'hello，我想问一下，我们是从2月18号继续居家办公到2月底，是的吗?'}}" -->
+                <!-- 预览,回到起点 -->
+                <!-- auto-height="true" -->
+  <view a:if="{{!textarea.isShow}}"
+    class="textarea-preview"  onTap="onTextareaPreviewTap"
+    style="height:300px"><!--{{textarea.height+6}}-->
+    {{textarea.data}}
+    <view a:if="{{!textarea.data}}" class="text-placeholder">
+      {{placeholder}}
+    </view>
+    <view class="text-counter {{placeholderClass}}" a:if="{{maxLength>0}}">
+      {{textarea.currentLength}}/{{maxLength}}
+    </view>
+  </view>
+</view>

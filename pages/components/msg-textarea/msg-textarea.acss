@@ -1,0 +1,18 @@
+.textarea-preview{
+  /* padding: 4rpx 10rpx 32rpx; */
+  width: 100%;
+}
+
+.text-counter{
+  color: #B2B2B2;
+  float: right;
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  padding-right: 10rpx;
+  font-size: 27rpx;
+}
+
+.text-placeholder{
+  color: #C5C9CB;
+}

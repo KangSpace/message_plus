@@ -1,0 +1,113 @@
+<import src="/pages/biz/copyright/copyright.axml"></import>
+<view class="page">
+  <view class="page-head">当前用户
+    <view class="user-info"  a:if="{{settings.userInfo.userId}}">
+      <text class="user-name">{{settings.userInfo.name}}</text>
+      <open-avatar class="user-avatar" 
+        nickName="{{settings.userInfo.name}}" 
+        userId="{{settings.userInfo.userId}}" 
+        snape = "square"
+        size="small"></open-avatar>
+    </view>
+  </view>
+  <view class="page-container" key="container">
+    <!-- APP类型配置 -->
+    <view name="appTypeSettingView">
+      <view class="page-description">APP类型</view>
+      <form>
+        <view class="page-section">
+          <view class="form-row row-auto-height">
+            <view class="form-row-content">
+              <radio-group class="radio-group" onChange="onAppTypeChangeHandle" name="appType">
+                <label a:for="{{constants.appTypes}}" class="radio" key="label-{{index}}">
+                  <radio id="{{item.id}}" value="{{item.id}}" checked="{{item.id && item.id == settings.appType.type}}" disabled="{{item.disabled}}" class="radio-right radio-small"></radio>
+                  <text class="radio-text">{{item.name}}</text>
+                  <view class="radio-sub-desc">
+                    {{item.desc}}
+                    <view a:if="{{item.helpTags}}">
+                      <view a:for="{{item.helpTags}}" a:for-item="helpTag" a:for-index="idx" class="href-button" catchTap="goto" key="helpTag-{{idx}}" data-href="{{helpTag.url}}">{{helpTag.name}}</view>
+                    </view>
+                  </view>
+                </label>
+              </radio-group>
+            </view>
+          </view>
+        </view>
+      </form>
+    </view>
+    <!-- 自定义APP 配置 -->
+    <view a:if="{{settings.appType.type=='custom'}}" name="customAppSettingView">
+      <view class="page-description">
+        API配置
+        <!-- <button a:if="{{settings.appInfo.changed}}" name="apiConfigSaveBtn" onTap="" size="mini" type="primary" class="button save-btn">保存</button> -->
+      </view>
+      <view class="page-section">
+        <form>
+          <view class="form-row">
+            <view class="form-row-label">AppKey<view class="required">*</view></view>
+            <view class="form-row-content">
+              <input name="appKeyInput" class="input" placeholder="AppKey" value="{{settings.appInfo.appKey}}" maxlength="50" onInput="onAppKeySettingInputChanged"></input>
+            </view>
+          </view>
+          <view class="form-line"></view>
+          <view class="form-row">
+            <view class="form-row-label">AppSecret<view class="required">*</view></view>
+            <view class="form-row-content">
+              <input name="appSecretInput" class="input" placeholder="AppSecret" value="{{settings.appInfo.appSecret}}" maxlength="100" onInput="onAppSecretSettingInputChanged"></input>
+            </view>
+          </view>
+        </form>
+      </view>
+      <view class="request-type-config-view">
+        <view class="page-description">
+          接口请求模式
+          <!-- <button a:if="{{settings.requestType.changed}}" name="apiConfigSaveBtn" onTap="" size="mini" type="primary" class="button save-btn">保存</button> -->
+        </view>
+        <form>
+          <view class="page-section">
+            <view class="form-row row-auto-height">
+              <view class="form-row-content">
+                <radio-group class="radio-group" onChange="onRequestTypeChangeHandle" name="requestType">
+                  <label a:for="{{constants.requestTypes}}" class="radio" key="label-{{index}}">
+                    <radio id="{{item.id}}" value="{{item.id}}" checked="{{item.id == settings.requestType.type}}" disabled="{{item.disabled}}" class="radio-right radio-small"></radio>
+                    <text class="radio-text">{{item.name}}</text>
+                    <view class="radio-sub-desc">
+                      {{item.desc}}
+                      <view a:if="{{item.helpTags}}">
+                        <view a:for="{{item.helpTags}}" a:for-item="helpTag" a:for-index="idx" class="href-button" catchTap="goto" key="helpTag-{{idx}}" data-href="{{helpTag.url}}">{{helpTag.name}}</view>
+                      </view>
+                    </view>
+                  </label>
+                  
+                </radio-group>
+              </view>
+            </view>
+          </view>
+          <view a:if="{{settings.requestType.type=='remote'}}" name="requestTypeServerConfigView">
+            <view class="page-section-inner-space"></view>
+            <view class="page-section">
+              <view class="form-row">
+                <view class="form-row-label">Server地址<view class="required">*</view></view>
+                <view class="form-row-content">
+                  <input name="serverUrl" class="input" placeholder="e.g.: https://example.org" value="{{settings.requestType.serverUrl}}" maxlength="500" onInput="onServerUrlSettingInputChanged"></input>
+                </view>
+              </view>
+            </view>
+          </view>
+        </form>
+      </view>
+    </view>
+    <!--帮助-->
+    <!-- <view class="help-view">
+      <button size="default" onTap="goto" data-href="/pages/biz/help/help">
+        <view class="section-button">帮助</view>
+      </button>
+    </view> -->
+    <view class="save-btn-view">
+      <button onTap="onSettingSaveHandle" loading="{{settings.status.loading}}" name="saveSettingBtn" disabled="{{!settings.status.changed}}" size="default" type="primary">保存</button>
+    </view>
+  </view>
+</view>
+<view class="goto-test-page" onLongTap="goto" data-href="/pages/test/index">
+</view>
+<template key="copyright" is="copyright"></template>

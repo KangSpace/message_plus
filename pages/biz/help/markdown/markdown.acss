@@ -1,0 +1,6 @@
+.page-section{
+  padding: 0.32rem;
+}
+.markdown-help-text{
+  padding: 0.32rem 0;
+}
