@@ -1,0 +1,81 @@
+<import  src="/pages/biz/copyright/copyright.axml"/>
+
+<view class="page">
+  <view class="container" key="container">
+    <!-- <view class="page-description">
+      消息类型说明
+    </view> -->
+    <view class="page-section p-32">
+      <view class="message-preview-block">
+        1. Markdown消息
+        <text class="desc">可用于Markdown图文混排，图文链接等类型的消息发送。</text>
+        <view class="block-body">
+          <view class="input-view">
+            <text class="desc-title">输入:</text>
+            <image mode="widthFix" src="/snapshots/markdown.png" />  
+          </view>
+
+          <view class="preview-view">
+            <text class="desc-title">展示:</text>
+            <image mode="widthFix" src="/snapshots/preview/markdown_preview.png" />   
+            <view>
+              <image mode="widthFix" src="/snapshots/preview/markdown_title.png" /> 
+              <text class="desc-text">(首屏会话)</text>
+            </view>
+          </view>
+        
+        </view>
+      </view>
+      <view class="message-preview-block">
+        2. OA消息
+        <text class="desc">可用于附件，表单等类型的通知消息。</text>
+        <view class="block-body">
+          <view class="input-view">
+            <text class="desc-title">输入:</text>
+            <image mode="widthFix" src="/snapshots/preview/oa_input.png" />  
+          </view>
+
+          <view class="preview-view">
+            <text class="desc-title">展示:</text>
+            <image mode="widthFix" src="/snapshots/preview/oa_preview.png" /> 
+          </view>
+        </view>
+      </view>
+
+      <view class="message-preview-block">
+        3. 卡片消息(整体跳转)
+        <text class="desc">可用于只有1个跳转链接的通知消息，支持Markdown图文内容。如分享文章，图文活动等。</text>
+        <view class="block-body">
+          <view class="input-view">
+            <text class="desc-title">输入:</text>
+            <image mode="widthFix" src="/snapshots/preview/actioncard_input.png" />  
+          </view>
+
+          <view class="preview-view">
+            <text class="desc-title">展示:</text>
+            <image mode="widthFix" src="/snapshots/preview/actioncard_preview.png" /> 
+          </view>
+        </view>
+      </view>
+      <view class="message-preview-block">
+        4. 卡片消息(独立跳转)
+        <text class="desc">可用于有多个跳转链接按钮的通知消息，支持Markdown图文内容。如分享文章，图文活动，订阅，投票等。</text>
+        <view class="block-body">
+          <view class="input-view">
+            <text class="desc-title">输入:</text>
+            <image mode="widthFix" src="/snapshots/preview/actioncard2_input.png" />  
+          </view>
+
+          <view class="preview-view">
+            <text class="desc-title">展示:</text>
+            <image mode="widthFix" src="/snapshots/preview/actioncard2_preview.png" /> 
+          </view>
+        </view>
+      </view>
+      <view class="message-preview-block">
+        5. 图片和文本消息
+        <text class="desc">同钉钉中普通的图片和文本类型的消息。</text>
+      </view>
+  </view>
+</view>
+<template key="copyright" is="copyright"/>

@@ -1,0 +1,33 @@
+.message-preview-block{
+  
+}
+.message-preview-block .block-body{
+  display: flexbox;
+  margin: 24rpx 0;
+}
+.message-preview-block image{
+  
+}
+.message-preview-block .desc{
+  font-size: 24rpx;
+  display: block;
+  margin: 10rpx 0;
+  color: #bdbebf;
+}
+.message-preview-block .desc-title{
+  font-size: 24rpx;
+  display: block;
+  margin: 6rpx;
+  text-align: left;
+}
+
+.message-preview-block .input-view{
+  width: 50%;
+  display: inline-block;
+}
+.message-preview-block .preview-view{
+  width: 50%;
+  /* display: inline-block; */
+  float: right;
+  text-align: center;
+}

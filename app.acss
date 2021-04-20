@@ -250,6 +250,9 @@ image{
 .p-t-32{
   padding-top: 32rpx;
 }
+.p-32{
+  padding: 32rpx;
+}
 .p-b-32{
   padding-top: 32rpx;
 }

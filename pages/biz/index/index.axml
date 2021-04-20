@@ -13,7 +13,11 @@
       
     </view>
     <view class="page-description">
-      <view class="inline_block">消息Plus</view>
+      <view class="inline_block message-title">消息Plus
+        <view class="message-preview-help" onTap="goto" data-href="/pages/biz/help/message-preview/message-preview">
+          <icon type="info" size="17"></icon>
+        </view>
+      </view>
       <view class="setting-btns-view">
       <!-- <button size="mini" class="trans-btn" type="primary" onTap="goto" data-href="/pages/test/index">TestPage</button> -->
       <!-- <button size="mini" class="trans-btn" type="primary" onTap="scrollInto">Tab滚动</button> -->

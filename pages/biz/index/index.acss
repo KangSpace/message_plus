@@ -51,3 +51,14 @@
   position: relative;
   top: -10rpx;
 }
+
+.message-title{
+
+}
+.message-preview-help{
+  display: inline-block;
+  position: relative;
+  margin-left: 8rpx;
+  bottom: -4rpx;
+  filter: grayscale(100%);
+}

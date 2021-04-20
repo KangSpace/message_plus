@@ -200,7 +200,8 @@
   position: absolute;
   right: 0;
   z-index: 99; 
-  margin-top: 5px;
+  margin-top: 16rpx;
+  filter: grayscale(100%);
 }
 .msg-markdown  .msg-markdown-title{
   /* width: 90%; */

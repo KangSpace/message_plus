@@ -41,7 +41,7 @@
                 /> -->
                 <textarea class="msg-textarea"
                   placeholder="输入消息内容(必填)..."
-                  maxlength = "1000"
+                  maxlength = "3000"
                   focus="{{false}}"
                   onInput="onInputChangeValueSet" data-modifyData="messageInfo.text.content"
                   ></textarea>
@@ -224,7 +224,7 @@
         <!-- Markdown -->
          <view class="msg-bubble-area msg-markdown">
             <view class="markdown-help" onTap="goto" data-href="/pages/biz/help/markdown/markdown">
-              <icon type="info" size="20"></icon>
+              <icon type="info" size="17"></icon>
             </view>
             <view class="msg-markdown-title">
               <input placeholder="输入标题(首屏会话展示,必填)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.markdown.title" />
@@ -234,7 +234,7 @@
                     <!--msg-bubble-input-->
                       <textarea class="msg-textarea"
                         placeholder="输入消息内容(支持Markdown,必填)..."
-                        maxlength = "1000"
+                        maxlength = "3000"
                         focus="{{false}}"
                         onInput="onInputChangeValueSet" data-modifyData="messageInfo.markdown.content"
                         ></textarea>
@@ -252,7 +252,7 @@
               <view class="msg-actioncard-content">
                         <textarea class="msg-textarea-150"
                           placeholder="输入消息内容(支持Markdown,必填)..."
-                          maxlength = "1000"
+                          maxlength = "3000"
                           focus="{{false}}"
                           onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.content" 
                           ></textarea>
@@ -276,7 +276,7 @@
               <view class="msg-actioncard-content">
                         <textarea class="msg-textarea-150"
                           placeholder="输入消息内容(支持Markdown,必填)..."
-                          maxlength = "1000"
+                          maxlength = "3000"
                           focus="{{false}}"
                           onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.content" 
                           ></textarea>
