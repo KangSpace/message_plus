@@ -2,8 +2,10 @@
 
 <view class="page">
   <view class="container" key="container">
+
+    <view a:if="{{!page.fullScreen}}"  class="index-head-container">
   <!-- image-box -->
-    <view class="head-view slogon bc_white ">
+      <view class="head-view slogon bc_white ">
       <view class=""> 
         <image src="/images/messageplus_logo.png" mode="scaleToFill" class="logo"></image>
         <view>
@@ -12,7 +14,7 @@
       </view> 
       
     </view>
-    <view class="page-description">
+      <view class="page-description">
       <view class="inline_block message-title">消息Plus
         <view class="message-preview-help" onTap="goto" data-href="/pages/biz/help/message-preview/message-preview">
           <icon type="info" size="17"></icon>
@@ -23,15 +25,19 @@
       <!-- <button size="mini" class="trans-btn" type="primary" onTap="scrollInto">Tab滚动</button> -->
           <!-- <button size="mini" class="trans-btn" type="primary" onTap="changeSort">调序</button> -->
           <!-- <button size="mini" class="trans-btn" type="primary" onTap="goto" data-href="https://github.com/KangSpace/message_plus#%E6%B6%88%E6%81%AF%E5%BD%A2%E5%BC%8F%E9%A2%84%E8%A7%88">消息示例</button> -->
-          <button name="setting-btn" onTap="goto" data-href="/pages/biz/settings/settings" size="mini" type="primary" class="trans-btn">
+          <view size="mini" type="primary" class="trans-btn" onTap="onFullScreen" data-type="true"> 
+            <image mode="scaleToFill" class="icon" src="/images/icon_full-screen-one.png"/>
+          </view>
+          <view name="setting-btn" onTap="goto" data-href="/pages/biz/settings/settings" size="mini" type="primary" class="trans-btn">
             <image mode="scaleToFill" class="icon" src="/images/icon_setting.png"/>
-            设置
-          </button>
+            <!-- 设置 -->
+          </view>
       </view>
+    </view>
     </view>
     <view class="page-section p-0">
       <!-- 消息处理的组件-->
-      <message-web-swaper tabs="{{messageTabs}}" scrollInfoView = "{{scrollInfoView}}" />
+      <message-web-swaper tabs="{{messageTabs}}" scrollInfoView = "{{scrollInfoView}}" swiperHeight="{{tabSwaper.height}}" fullScreen="{{page.fullScreen}}"/>
     </view>
      
     <!-- <view class="bottom-btn-view">

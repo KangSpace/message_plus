@@ -14,12 +14,16 @@
       </scroll-view>
       <view class="more-tab-shadow"> 
         <image mode="scaleToFill" class="icon" src="/images/icon_right-one.png"/>
+        <view a:if="{{fullScreen}}" class="off-screen-btn" onTap="onFullScreen" data-type="false">
+          <image mode="scaleToFill" class="icon" src="/images/icon_off-screen-one.png"/>
+        </view>
+
       </view>
     </view>
 
     <!-- 内容Swiper  -->
     <swiper 
-      style="height:{{tabSwaper.height}}"
+      style="height:{{swiperHeight}}"
       class="msg-swiper"
       indicator-dots="{{tabSwaper.indicatorDots}}"
       onChange="onTabSwaperChange"
@@ -39,7 +43,7 @@
                   maxLength="500"
                   modifyData="messageInfo.text.content"
                 /> -->
-                <textarea class="msg-textarea"
+                <textarea class="msg-textarea {{fullScreen?'height_350':''}}"
                   placeholder="输入消息内容(必填)..."
                   maxlength = "3000"
                   focus="{{false}}"
@@ -74,7 +78,7 @@
       <view class="swiper-item" a:elif="{{item.type== 'link' && item.index == tabSwaper.selectedIndex}}">
         链接
       </view>
-      <view class="swiper-item" a:elif="{{item.type== 'oa' && item.index == tabSwaper.selectedIndex}}" style="margin-bottom:30px;">
+      <view class="swiper-item" a:elif="{{item.type== 'oa' && item.index == tabSwaper.selectedIndex}}">
         <!-- OA -->
         <view class="msg-bubble-area">
             <view class="msg-bubble msg-oa">
@@ -103,7 +107,11 @@
                     <!-- 消息内容 -->
                     <view class="msg-oa-body-content">
                       <!-- 消息+OA消息测试内容： 企业内部增强消息发送APP -->
-                      <textarea placeholder="输入消息内容(必填)"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.content"></textarea>
+                      <textarea class=" {{fullScreen?'height_250':''}}" 
+                                placeholder="输入消息内容(必填)"  
+                                onInput="onInputChangeValueSet" 
+                                data-modifyData="messageInfo.oa.content"
+                                maxlength="300"></textarea>
                     </view>
                     <!-- form表达属性对 -->
                     <view class="msg-oa-body-props">
@@ -232,7 +240,7 @@
             <view class="msg-bubble "><!--msg-bubble-bg-blue-->
                 <view class="msg-text">
                     <!--msg-bubble-input-->
-                      <textarea class="msg-textarea"
+                      <textarea class="msg-textarea  {{fullScreen?'height_350':''}}"
                         placeholder="输入消息内容(支持Markdown,必填)..."
                         maxlength = "3000"
                         focus="{{false}}"
@@ -250,7 +258,7 @@
                 <input placeholder="输入标题(首屏会话展示,必填)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.title" />
               </view>
               <view class="msg-actioncard-content">
-                        <textarea class="msg-textarea-150"
+                        <textarea class="msg-textarea-150  {{fullScreen?'height_350':''}}"
                           placeholder="输入消息内容(支持Markdown,必填)..."
                           maxlength = "3000"
                           focus="{{false}}"
@@ -274,7 +282,7 @@
                 <input placeholder="输入标题(首屏会话展示,必填)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.title" />
               </view>
               <view class="msg-actioncard-content">
-                        <textarea class="msg-textarea-150"
+                        <textarea class="msg-textarea-150 {{fullScreen?'height_250':''}}"
                           placeholder="输入消息内容(支持Markdown,必填)..."
                           maxlength = "3000"
                           focus="{{false}}"

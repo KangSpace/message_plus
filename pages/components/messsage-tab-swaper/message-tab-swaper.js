@@ -87,7 +87,8 @@ Component({
      * {type:"text",name:"文本",index:0}
      */
     tabs:[],
-    scrollInfoView:""
+    scrollInfoView:"",
+    swiperHeight:400
   },
   didMount() {
     
@@ -96,6 +97,7 @@ Component({
     let currentMsgType = this.props.tabs[this.data.tabSwaper.selectedIndex].type;
     this.setData({"tabSwaper.currentMsgType":currentMsgType}) ;
     // console.log("call onTabSwaperChange ok! currentMsgType:"+currentMsgType);
+    this.doSwipperAutoHeight();
   },
   didUnmount() {},
   onLoad(){
@@ -106,10 +108,11 @@ Component({
     ...util,
     doSwipperAutoHeight(){
       // console.log("call doSwipperAutoHeight");
-      let page = this;
+      let page = this.$page?this.$page:this;
       let swiper = util.ui.selector().select(".swiper-item").boundingClientRect().exec((ret) => {
         if(ret && ret.length>0){
-          let height =ret[0].height+20;
+          // +20
+          let height =page.getLastHeight(ret[0].height);
           page.setData({"tabSwaper.height":height});
         }
       });
@@ -118,7 +121,7 @@ Component({
     /**swaper换页 */
     onTabSwaperChange(e){
       //下标从0开始
-      console.log("call onTabSwaperChange:",e);
+      // console.log("call onTabSwaperChange:",e);
       let index = e.detail.current;
       this.setData({"tabSwaper.selectedIndex":index});
       //index转类型
@@ -127,8 +130,7 @@ Component({
       //   page.setData({"tabSwaper.selectedIndex":index});
       //   console.log("tabSwaper.selectedIndex:"+index);
       // },300);
-      //更新高度
-      this.doSwipperAutoHeight();
+
 
     },
     /**点击tab换页 */
@@ -236,9 +238,12 @@ Component({
     markdownMsgSubmitHandle(){
       let markdown = this.data.messageInfo.markdown;
       //校验参数
-      if(!markdown.title || !markdown.content){
+      if(!markdown.content){
         util.ui.toast("请输入消息标题和内容~");
         return 0;
+      }
+      if(!markdown.title){
+        markdown.title = this.getTitleFromContent(markdown.content);
       }
       let title = markdown.title;
       let content = markdown.content;
@@ -575,7 +580,18 @@ Component({
         console.error(e);
       }
 
+    },
+    onFullScreen(e){
+      this.$page.onFullScreen(e);
+    },
+    /** 从content中取title,最多150字,多有的...,过滤markdown标签 */
+    getTitleFromContent(content){
+      content = util.filterMarkdownTag(content);
+      if(!content){
+        return content;
+      }
+      let maxLength = content.length>150?150:content.length;
+      return content.substring(0,maxLength)+(maxLength<=150?"...":"");
     }
-
   },
 });

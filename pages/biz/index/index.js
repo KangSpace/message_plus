@@ -10,6 +10,10 @@ Page({
     pageName: 'index/index',
     pageDesc:'消息Plus',
     messageTabs:constants.constants.messageTypes,
+    page:{
+      //
+      fullScreen:false
+    }
     
   },
 
@@ -68,4 +72,12 @@ Page({
       path: 'pages/biz/index/index',
     };
   },
+  onFullScreen(e){
+    var type = e.currentTarget.dataset.type;
+    this.setData({"page.fullScreen":(type && type =="true"?true:false)});
+  },
+  getLastHeight(rawHeight){
+    // return this.data.page.fullScreen?(rawHeight+150):rawHeight;
+    return rawHeight;
+  }
 });

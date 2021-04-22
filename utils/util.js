@@ -126,7 +126,7 @@ export default{
     },
     onInputChangeValueSet(e){
       let modifyDataKey = e.currentTarget.dataset.modifyData;
-      this.setModifyDataValue(modifyDataKey ,e.detail.value,"onInputChangeValueSet");
+      this.setModifyDataValue(modifyDataKey ,e.detail.value.trim(),"onInputChangeValueSet");
     },
     setModifyDataValue(modifyDataKey,value,funName=""){
       if(!modifyDataKey){
@@ -176,6 +176,27 @@ export default{
     toDTalkClientUrl(url){
       //&pc_slide=true
       return url?("dingtalk://dingtalkclient/page/link?url="+encodeURIComponent(url)):"";
+    },
+
+    filterMarkdownTag(str){
+      if(!str){
+        return str;
+      }
+      //#处理
+      str = str.replace(/(#+\s)/ig,'');
+      //引用处理
+      str = str.replace(/(>\s)/ig,'');
+      //加粗文字
+      str = str.replace(/(\*{2}(.*?)\*{2})/ig,'$2');
+      //斜体处理
+      str = str.replace(/(\*(.*?)\\*)/ig,'$2');
+      //图片处理
+      str = str.replace(/\!\[.*?\]\(.*?\)/ig,'[图片]');
+      //链接处理
+      str = str.replace(/\[.*?\]\(.*?\)/ig,'[链接]');
+      //有/无序列表不处理
+      return str;
+      
     }
     
 }

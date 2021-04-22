@@ -39,7 +39,7 @@
 .user-info{
   float: right;
   position: relative;
-  top: -0.25rem;
+  /* top: -0.25rem; */
 }
 .user-info .user-avatar{
   display: inline-block;

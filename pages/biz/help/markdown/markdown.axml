@@ -4,6 +4,9 @@
   <view class="container">
     <view class="page-description">
       Markdown 语法
+      <view class="desc-text">
+        需注意标签后的空格
+      </view>
     </view>
     <view class="page-section">
       <text class="markdown-help-text">

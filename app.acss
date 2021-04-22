@@ -8,7 +8,8 @@ page {
 
 textarea,input{
   font-size: 30rpx;
-  width: 95%;
+  /* width: 95%; */
+  width: calc( 100% - 5px);
   margin: 0;
   padding-right: 0;
   vertical-align: middle;
@@ -189,10 +190,11 @@ image{
 .trans-btn:active,
 .trans-btn:hover
 {
-    margin: 0;
+    margin: 0 0 0 10rpx;
     border: 0;
     background: none;
     color: #888;
+    display: inline-block;
 }
 .trans-btn:hover{
     /* background-color: #fff;
