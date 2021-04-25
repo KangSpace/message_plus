@@ -206,16 +206,23 @@
   position: relative;
   padding-bottom: 100rpx;
 } 
-.msg-markdown .markdown-help{
-  position: absolute;
+/* .msg-markdown  */
+.markdown-help{
+  /* position: absolute;
   right: 0;
-  z-index: 99; 
-  margin-top: 16rpx;
+  z-index: 99;  */
+  /* margin-top: 16rpx; */
+  border-top: 1px solid #e1e0e4;
+  padding: 6rpx !important;
   filter: grayscale(100%);
 }
+/* .msg-markdown */
+.markdown-help icon{
+  vertical-align: top;
+  margin-right: 8rpx;
+}
 .msg-markdown  .msg-markdown-title{
-  /* width: 90%; */
-  width :calc(100% - 30px);
+  /* width :calc(100% - 30px); */
   margin-bottom: 20rpx;
   border-radius: 6px;
   border: 1px solid #e1e0e4;
@@ -459,7 +466,7 @@
   border-top: 2rpx solid #e6e5e6;
 }
 .msg-actioncard .msg-actioncard-btn-orient{
-  padding: 20rpx 0;
+  padding-top: 20rpx;
 }
 .msg-actioncard .msg-actioncard-btn-orient radio-group{
   display: inline-block;
@@ -489,11 +496,11 @@
   width: 50%;
 }
 .msg-actioncard .msg-actioncard-btns .msg-actioncard-btn input{
-  width: 45%;
+  width: 48%;
 }
 .msg-actioncard .msg-actioncard-btns .msg-actioncard-btn input:nth-child(even){
   border-left: 1rpx solid #e6e5e6;
-  padding-left: 10rpx; 
+  /* padding-left: 10rpx;  */
 }
 .msg-actioncard .msg-actioncard-addmove-btns{
   display: block;

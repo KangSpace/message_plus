@@ -127,67 +127,67 @@
                         <view a:if="{{messageInfo.oa.propsCount>0}}" class="msg-oa-body-prop">
                             <view class="msg-oa-body-prop-key">
                             <!-- 组织: -->
-                              <input placeholder="名称,如:'姓名：'" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[0].key"/>
+                              <input placeholder="名称" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[0].key"/>
                             </view>
                             <!-- <view class="split"></view> -->
                             <view class="msg-oa-body-prop-value"> 
                             <!-- KangSpace -->
-                              <input placeholder="值,如:'KangSpace'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[0].value"/>
+                              <input placeholder="值"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[0].value"/>
                             </view>
                         </view>
                         <view a:if="{{messageInfo.oa.propsCount>1}}" class="msg-oa-body-prop">
                            <view class="msg-oa-body-prop-key">
                             <!-- 组织: -->
-                              <input placeholder="名称,如:'姓名：'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[1].key"/>
+                              <input placeholder="名称"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[1].key"/>
                             </view>
                             <!-- <view class="split"></view> -->
                             <view class="msg-oa-body-prop-value"> 
                             <!-- KangSpace -->
-                              <input placeholder="值,如:'KangSpace'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[1].value" />
+                              <input placeholder="值"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[1].value" />
                             </view>
                         </view>
                         <view a:if="{{messageInfo.oa.propsCount>2}}" class="msg-oa-body-prop">
                             <view class="msg-oa-body-prop-key">
                             <!-- 组织: -->
-                              <input placeholder="名称,如:'姓名：'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[2].key"/>
+                              <input placeholder="名称"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[2].key"/>
                             </view>
                             <!-- <view class="split"></view> -->
                             <view class="msg-oa-body-prop-value"> 
                             <!-- KangSpace -->
-                              <input placeholder="值,如:'KangSpace'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[2].value"/>
+                              <input placeholder="值"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[2].value"/>
                             </view>
                         </view>
                         <view a:if="{{messageInfo.oa.propsCount>3}}" class="msg-oa-body-prop">
                             <view class="msg-oa-body-prop-key">
                             <!-- 组织: -->
-                              <input placeholder="名称,如:'姓名：'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[3].key"/>
+                              <input placeholder="名称"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[3].key"/>
                             </view>
                             <!-- <view class="split"></view> -->
                             <view class="msg-oa-body-prop-value"> 
                             <!-- KangSpace -->
-                              <input placeholder="值,如:'KangSpace'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[3].value"/>
+                              <input placeholder="值"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[3].value"/>
                             </view>
                         </view>
                         <view a:if="{{messageInfo.oa.propsCount>4}}" class="msg-oa-body-prop">
                             <view class="msg-oa-body-prop-key">
                             <!-- 组织: -->
-                              <input placeholder="名称,如:'姓名：'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[4].key"/>
+                              <input placeholder="名称"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[4].key"/>
                             </view>
                             <!-- <view class="split"></view> -->
                             <view class="msg-oa-body-prop-value"> 
                             <!-- KangSpace -->
-                              <input placeholder="值,如:'KangSpace'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[4].value"/>
+                              <input placeholder="值"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[4].value"/>
                             </view>
                         </view>
                         <view a:if="{{messageInfo.oa.propsCount>5}}" class="msg-oa-body-prop">
                             <view class="msg-oa-body-prop-key">
                             <!-- 组织: -->
-                              <input placeholder="名称,如:'姓名：'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[5].key"/>
+                              <input placeholder="名称"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[5].key"/>
                             </view>
                             <!-- <view class="split"></view> -->
                             <view class="msg-oa-body-prop-value"> 
                             <!-- KangSpace -->
-                              <input placeholder="值,如:'KangSpace'"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[5].value"/>
+                              <input placeholder="值"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.props[5].value"/>
                             </view>
                         </view>
 
@@ -207,21 +207,21 @@
                       <view class="desc-text">附件数量(非必填)</view>
                       <view class="msg-oa-body-attach">
                           <view class="msg-oa-body-attach-num">
-                            <input placeholder="数量" type="number" style="" maxlength="3" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.attach.num"/>
+                            <input placeholder="0" type="number" style="" maxlength="3" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.attach.num"/>
                             个附件
                           </view>
                       </view>
                     </view>
                       <view class="msg-oa-body-authordate">
-                        <view class="desc-text">作者(必填)</view>
+                        <view class="desc-text">作者(非必填)</view>
                         <view class="msg-oa-body-author">
-                          <input placeholder="作者(非必填)" maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.author"/>
+                          <input placeholder="作者" maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.author"/>
                         </view>
                         <view class="msg-oa-body-date">04-08 21:42</view>
                     </view>
                     <view class="msg-oa-body-link">
                         <view class="href-button" data-href="" onTap="goto">查看详情</view>
-                        <input placeholder="跳转链接(必填)" maxlength="500" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.msgUrl"/>
+                        <input placeholder="链接(必填)" maxlength="500" onInput="onInputChangeValueSet" data-modifyData="messageInfo.oa.msgUrl"/>
                     </view>
 
                 </view>
@@ -231,11 +231,8 @@
       <view class="swiper-item" a:elif="{{item.type== 'markdown' && item.index == tabSwaper.selectedIndex}}">
         <!-- Markdown -->
          <view class="msg-bubble-area msg-markdown">
-            <view class="markdown-help" onTap="goto" data-href="/pages/biz/help/markdown/markdown">
-              <icon type="info" size="17"></icon>
-            </view>
             <view class="msg-markdown-title">
-              <input placeholder="输入标题(首屏会话展示,必填)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.markdown.title" />
+              <input placeholder="输入标题(首屏会话展示)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.markdown.title" />
             </view>
             <view class="msg-bubble "><!--msg-bubble-bg-blue-->
                 <view class="msg-text">
@@ -246,6 +243,9 @@
                         focus="{{false}}"
                         onInput="onInputChangeValueSet" data-modifyData="messageInfo.markdown.content"
                         ></textarea>
+                      <view class="markdown-help desc-text" onTap="goto" data-href="/pages/biz/help/markdown/markdown">
+                        <icon type="info" size="15"></icon>Markdown语法帮助
+                      </view>
                 </view>
             </view>
         </view>
@@ -255,7 +255,7 @@
         <view class="msg-bubble-area">
           <view class="msg-bubble msg-actioncard">
               <view class="msg-actioncard-title">
-                <input placeholder="输入标题(首屏会话展示,必填)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.title" />
+                <input placeholder="输入标题(首屏会话展示)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.title" />
               </view>
               <view class="msg-actioncard-content">
                         <textarea class="msg-textarea-150  {{fullScreen?'height_350':''}}"
@@ -264,11 +264,14 @@
                           focus="{{false}}"
                           onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.content" 
                           ></textarea>
+                          <view class="markdown-help desc-text" onTap="goto" data-href="/pages/biz/help/markdown/markdown">
+                            <icon type="info" size="15"></icon>Markdown语法帮助
+                          </view>
               </view>
               <view class="msg-actioncard-single">
                 <view>
-                  <input placeholder="查看详情,链接文本(最长20个字符)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.msgBtn.title" />
-                  <input class="single-url" placeholder="跳转链接(必填)" maxlength="500"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.msgBtn.msgUrl" />
+                  <input placeholder="链接文本(最长20个字符)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.msgBtn.title" />
+                  <input class="single-url" placeholder="链接(必填)" maxlength="500"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard.msgBtn.msgUrl" />
                 </view>
               </view>
           </view>
@@ -279,7 +282,7 @@
          <view class="msg-bubble-area">
           <view class="msg-bubble msg-actioncard">
             <view class="msg-actioncard-title">
-                <input placeholder="输入标题(首屏会话展示,必填)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.title" />
+                <input placeholder="输入标题(首屏会话展示)" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.title" />
               </view>
               <view class="msg-actioncard-content">
                         <textarea class="msg-textarea-150 {{fullScreen?'height_250':''}}"
@@ -288,8 +291,11 @@
                           focus="{{false}}"
                           onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.content" 
                           ></textarea>
+                          <view class="markdown-help desc-text" onTap="goto" data-href="/pages/biz/help/markdown/markdown">
+                            <icon type="info" size="15"></icon>Markdown语法帮助
+                          </view>
               </view>
-              <view class="msg-actioncard-btn-orient">
+              <view class="msg-actioncard-btn-orient desc">
                 按钮排列方式
                   <radio-group onChange="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.btnOrient" >
                     <label a:for="{{messageInfo.actionCard2.btnOrients}}">
@@ -300,7 +306,7 @@
                   </radio-group>
               </view>
               <view class="msg-actioncard-addmove-btns">
-                <view class="desc-text" style="display: inline;">最多添加6个按钮(按钮为2个时可设置排列方式)</view>
+                <view class="desc-text" style="display: inline;">最多添加6个按钮(必填,按钮为2个时可设置排列方式)</view>
                 <view a:if="{{messageInfo.actionCard2.btnCount<5}}"  class="add-move-icon" onTap="onActionCardCounterChangeUp" data-modifyData="messageInfo.actionCard2.btnCount" >
                   <image mode="scaleToFill" src="/images/icon_add-one.png"/>
                 </view>
@@ -310,27 +316,27 @@
               </view>
               <view class="msg-actioncard-btns">
                 <view a:if="{{messageInfo.actionCard2.btnCount>0}}" class="msg-actioncard-btn">
-                  <input class="msg-actioncard-btn-title" placeholder="查看详情,链接文本(必填,最长20个字符)" maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[0].title"  />
+                  <input class="msg-actioncard-btn-title" placeholder="链接文本(最长20个字符)" maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[0].title"  />
                   <input class="msg-actioncard-btn-url" placeholder="链接(必填)" maxlength="500"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[0].msgUrl"/>
                 </view>
                 <view a:if="{{messageInfo.actionCard2.btnCount>1}}" class="msg-actioncard-btn">
-                  <input class="msg-actioncard-btn-title" placeholder="查看详情,链接文本(必填,最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[1].title"/>
+                  <input class="msg-actioncard-btn-title" placeholder="链接文本(最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[1].title"/>
                   <input class="msg-actioncard-btn-url" placeholder="链接(必填)" maxlength="500"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[1].msgUrl"/>
                 </view>
                 <view a:if="{{messageInfo.actionCard2.btnCount>2}}" class="msg-actioncard-btn">
-                  <input class="msg-actioncard-btn-title" placeholder="查看详情,链接文本(必填,最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[2].title"/>
+                  <input class="msg-actioncard-btn-title" placeholder="链接文本(最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[2].title"/>
                   <input class="msg-actioncard-btn-url" placeholder="链接(必填)" maxlength="500"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[2].msgUrl"/>
                 </view>
                 <view a:if="{{messageInfo.actionCard2.btnCount>3}}" class="msg-actioncard-btn">
-                  <input class="msg-actioncard-btn-title" placeholder="查看详情,链接文本(必填,最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[3].title"/>
+                  <input class="msg-actioncard-btn-title" placeholder="链接文本(最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[3].title"/>
                   <input class="msg-actioncard-btn-url" placeholder="链接(必填)" maxlength="500" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[3].msgUrl"/>
                 </view>
                 <view a:if="{{messageInfo.actionCard2.btnCount>4}}" class="msg-actioncard-btn">
-                  <input class="msg-actioncard-btn-title" placeholder="查看详情,链接文本(必填,最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[4].title"/>
+                  <input class="msg-actioncard-btn-title" placeholder="链接文本(最长20个字符)"  maxlength="20" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[4].title"/>
                   <input class="msg-actioncard-btn-url" placeholder="链接(必填)" maxlength="500" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[4].msgUrl"/>
                 </view>
                 <view a:if="{{messageInfo.actionCard2.btnCount>5}}" class="msg-actioncard-btn">
-                  <input class="msg-actioncard-btn-title" placeholder="查看详情,链接文本(必填,最长20个字符)" maxlength="20"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[5].title"/>
+                  <input class="msg-actioncard-btn-title" placeholder="链接文本(最长20个字符)" maxlength="20"  onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[5].title"/>
                   <input class="msg-actioncard-btn-url" placeholder="链接(必填)" maxlength="500" onInput="onInputChangeValueSet" data-modifyData="messageInfo.actionCard2.msgBtns[5].msgUrl"/>
                 </view>
               </view>

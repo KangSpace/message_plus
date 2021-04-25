@@ -246,7 +246,7 @@ Component({
         markdown.title = this.getTitleFromContent(markdown.content);
       }
       let title = markdown.title;
-      let content = markdown.content;
+      let content = util.optimizeMarkdown(markdown.content);
       console.log("markdownMsgSubmitHandle markdown:",markdown);
       let msg={
             "msgtype": "markdown",
@@ -353,9 +353,12 @@ Component({
     actionCardMsgSubmitHandle(){
       let actionCard = this.data.messageInfo.actionCard;
       //校验参数
-      if(!actionCard.title || !actionCard.content){
+      if(!actionCard.content){
         util.ui.toast("请输入消息标题和内容~");
         return 0;
+      }
+      if(!actionCard.title){
+        actionCard.title = this.getTitleFromContent(actionCard.content);
       }
       if(!actionCard.msgBtn.msgUrl){
         util.ui.toast("请输入跳转链接~");
@@ -366,7 +369,7 @@ Component({
       }
       console.log("actionCardMsgSubmitHandle actionCard:",actionCard);
       let title = actionCard.title;
-      let content = actionCard.content;
+      let content = util.optimizeMarkdown(actionCard.content);
       let singleTitle = actionCard.msgBtn.title;
       //URL做统一跳转样式处理
       let singleUrl = util.toDTalkClientUrl(actionCard.msgBtn.msgUrl);
@@ -384,9 +387,12 @@ Component({
     actionCard2MsgSubmitHandle(){
       let actionCard2 = this.data.messageInfo.actionCard2;
       //校验参数
-      if(!actionCard2.title || !actionCard2.content){
+      if(!actionCard2.content){
         util.ui.toast("请输入消息标题和内容~");
         return 0;
+      }
+      if(!actionCard2.title){
+        actionCard2.title = this.getTitleFromContent(actionCard2.content);
       }
       if(!actionCard2.msgBtns.length){
         util.ui.toast("请输入链接文本和跳转链接~");
@@ -407,7 +413,7 @@ Component({
       }
       console.log("actionCard2MsgSubmitHandle actionCard2:",actionCard2," ,btnJsonList:",btnJsonList);
       let title = actionCard2.title;
-      let content = actionCard2.content;
+      let content = util.optimizeMarkdown(actionCard2.content);
       let btnOrient = btnCount==2?actionCard2.btnOrient:0;
       var msg={
                 "msgtype": "action_card",

@@ -55,4 +55,7 @@ Page({
     this.refreshRedirectTo(url);
   },
 
+  bindLoad(e){
+    console.info(e);
+  }
 });

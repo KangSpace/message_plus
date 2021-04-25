@@ -197,6 +197,23 @@ export default{
       //有/无序列表不处理
       return str;
       
+    },
+    /**优化Markdown */
+    optimizeMarkdown(str){
+      if(!str){
+        return str;
+      }
+      // 换行前没有双空格的自动补充双空格
+      let substrs = str.split("\n");
+      let result = "";
+      for(let idx in substrs){
+        let sub = substrs[idx];
+        if(!sub.endsWith("  ")){
+          sub+="  ";
+        }
+        result+=sub+"\n";
+      }
+      return result;
     }
     
 }

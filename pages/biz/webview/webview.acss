@@ -1,1 +1,13 @@
 @import '../error-view/index.acss';
+
+.loading-wrapper{
+    padding-top: 2.4rem;
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+.loading{
+  color: #bdbebf;
+  padding:8rpx 0;
+}

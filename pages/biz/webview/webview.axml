@@ -1,5 +1,11 @@
 <import src="/pages/biz/error-view/index.axml"/>
+
 <!-- loading.... page -->
+<view a:if="{{url!='error'}}" class="loading-wrapper">
+  <view class="loading">
+    正在跳转...
+  </view>
+</view>
 
 <!-- 页面刷新 -->
 <block a:if="{{url=='refresh'}}">
